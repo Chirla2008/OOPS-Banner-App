@@ -1,24 +1,16 @@
 public class UC3OOPS {
 
     public static void main(String[] args) {
-        printBanner();
-    }
 
-    // Static method to create banner
-    public static void printBanner() {
+        // Each line represents one row of the letters O, O, P, S
+        // Using String.join(" ", ...) for better memory efficiency
 
-        String line1 = "************************";
-        String line2 = "*      OOPS APP       *";
-        String line3 = "*   String Join UC3   *";
-        String line4 = "************************";
-
-        String banner = String.join("\n",
-                line1,
-                line2,
-                line3,
-                line4
-        );
-
-        System.out.println(banner);
+        System.out.println(String.join(" ", "  *****  ", "  *****  ", "  ****** ", "  ****** "));
+        System.out.println(String.join(" ", " **   ** ", " **   ** ", " **   ** ", " **      "));
+        System.out.println(String.join(" ", " **   ** ", " **   ** ", " **   ** ", " **      "));
+        System.out.println(String.join(" ", " **   ** ", " **   ** ", " ******  ", "  *****  "));
+        System.out.println(String.join(" ", " **   ** ", " **   ** ", " **      ", "       **"));
+        System.out.println(String.join(" ", " **   ** ", " **   ** ", " **      ", " **    **"));
+        System.out.println(String.join(" ", "  *****  ", "  *****  ", " **      ", "  ****** "));
     }
 }
